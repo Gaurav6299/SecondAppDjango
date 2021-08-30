@@ -21,12 +21,14 @@ def contact(request):
     # print(mytext)
     # print(myCheck)
     if myCheck=='on':
-
         analyzation=""
-        punchtuation= '''!()[]-{}&%$*\,<>./?@";:^&_~'''
+        punchtuation= '''!()[]-{}&%$*,\<>./?@";:^&_~'''
         for i in mytext:
             if i not in punchtuation:
                 analyzation=analyzation+i
+
+        if(myCheck1=="on"):
+            analyzation=analyzation.upper()
         params={'purpose':'Remove Punchtuation','analyse':analyzation}
         return render(request,'removePunc.html',params)
 

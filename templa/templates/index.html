@@ -47,33 +47,45 @@
 
      <div class="container">
 
-         <form>
+         <form action="/contact" method="get">
                <div class="form-group">
                 <label for="exampleFormControlTextarea1">Enter your text below</label>
                 <textarea class="form-control" name="mytext" id="exampleFormControlTextarea1" rows="9"></textarea>
               </div>
 
-             <div class="form-check form-switch">
-              <input class="form-check-input" name="myCheck" type="checkbox" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Remove Punctutations</label>
+             <div class="custom-control custom-switch">
+              <input class="custom-control-input" name="check" type="checkbox" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">Remove Punctutations</label>
             </div>
 
              <div class="form-check form-switch">
-              <input class="form-check-input" name="myCheck1" type="checkbox" id="flexSwitchCheckDefault1">
+              <input class="form-check-input" name="upperChar" type="checkbox" id="flexSwitchCheckDefault1">
               <label class="form-check-label" for="flexSwitchCheckDefault1">UPPER</label>
             </div>
 
              <div class="form-check form-switch">
-              <input class="form-check-input" name="removenewline" type="checkbox" id="flexSwitchCheckDefault2">
-              <label class="form-check-label" for="flexSwitchCheckDefault2">Remove New Line</label>
+              <input class="form-check-input" name="lowerChar" type="checkbox" id="flexSwitchCheckDefault2">
+              <label class="form-check-label" for="flexSwitchCheckDefault2">Lower Character</label>
             </div>
 
              <div class="form-check form-switch">
-              <input class="form-check-input" name="removespace" type="checkbox" id="flexSwitchCheckDefault3">
+              <input class="form-check-input" name="removenewline" type="checkbox" id="flexSwitchCheckDefault3">
               <label class="form-check-label" for="flexSwitchCheckDefault3">Remove New Line</label>
             </div>
-         </form>
 
+              <div class="form-check form-switch">
+              <input class="form-check-input" name="removespace" type="checkbox" id="flexSwitchCheckDefault4">
+              <label class="form-check-label" for="flexSwitchCheckDefault4">Remove Space</label>
+            </div>
+
+              <div class="form-check form-switch">
+              <input class="form-check-input" name="countchar" type="checkbox" id="flexSwitchCheckDefault5">
+              <label class="form-check-label" for="flexSwitchCheckDefault5">Count Character</label>
+            </div>
+
+             <button type="submit" class="btn btn-success">Annalyze</button>
+
+         </form>
      </div>
 
 

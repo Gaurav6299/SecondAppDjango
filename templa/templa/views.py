@@ -7,9 +7,6 @@ from django.shortcuts import render
 def index(request):
     return render(request,'index.html')
 
-def kon(request):
-    return HttpResponse("Kon hai...")
-
 
 def contact(request):
     # Fetch the Data
